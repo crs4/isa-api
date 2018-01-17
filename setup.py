@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='isatools',
-    version='0.9.3-lite',
+    version='0.9.3-superlite',
     packages=['isatools',
               'isatools.errors'
               ],
@@ -12,7 +12,8 @@ setup(
         '': ['LICENSE.txt', 'README.md']},
     description='Metadata tracking tools help to manage an increasingly '
                 'diverse set of life science, environmental and biomedical '
-                'experiments',
+                'experiments. This package only includes metadata parsing '
+                'functionality.',
     author='ISA Infrastructure Team',
     author_email='isatools@googlegroups.com',
     url='https://github.com/ISA-tools/isa-api',
@@ -28,11 +29,8 @@ setup(
         'Programming Language :: Python :: 3.6'
         ],
     install_requires=[
-        'numpy',
-        'pandas',
         'networkx',
         'six',
-        'matplotlib'
     ],
     test_suite='tests'
 )
